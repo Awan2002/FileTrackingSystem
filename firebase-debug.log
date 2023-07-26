@@ -1,0 +1,197 @@
+[debug] [2023-06-24T10:59:58.477Z] ----------------------------------------------------------------------
+[debug] [2023-06-24T10:59:58.480Z] Command:       /usr/local/bin/node /usr/local/bin/firebase init
+[debug] [2023-06-24T10:59:58.480Z] CLI Version:   12.4.0
+[debug] [2023-06-24T10:59:58.481Z] Platform:      darwin
+[debug] [2023-06-24T10:59:58.481Z] Node Version:  v18.14.2
+[debug] [2023-06-24T10:59:58.494Z] Time:          Sat Jun 24 2023 16:29:58 GMT+0530 (India Standard Time)
+[debug] [2023-06-24T10:59:58.495Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-06-24T10:59:58.500Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2023-06-24T10:59:58.630Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-06-24T10:59:58.631Z] > authorizing via signed-in user (awanyadav2002@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/awan/Desktop/webd/College Project/new_start
+
+[debug] [2023-06-24T10:59:59.810Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2023-06-24T10:59:59.810Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-06-24T11:00:19.841Z] > refreshing access token with scopes: []
+[debug] [2023-06-24T11:00:19.843Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-06-24T11:00:19.843Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-06-24T11:00:20.554Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-06-24T11:00:20.555Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-06-24T11:00:20.592Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2023-06-24T11:00:21.723Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2023-06-24T11:00:21.723Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project colproject-efb47 (ColProject) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2023-06-24T11:00:51.644Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2023-06-24T11:00:52.243Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2023-06-24T11:00:52.243Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.23.0","browserURL":"https://www.gstatic.com/firebasejs/9.23.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.23.0/firebase.tgz"},"live":{"version":"9.23","browserURL":"https://www.gstatic.com/firebasejs/live/9.23/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.23/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.23.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.23.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.23.0/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.23.0/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.23.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/9.23.0/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/9.23.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.23.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.23.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.23.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.23.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.23.0/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore.memory.js"}}
+[info] i  Skipping write of build/index.html 
+[info] 
+[info] i  Writing configuration info to firebase.json... 
+[info] i  Writing project information to .firebaserc... 
+[info] 
+[info] ✔  Firebase initialization complete! 
+[debug] [2023-06-24T11:01:05.570Z] Error: Timed out.
+    at Timeout._onTimeout (/usr/local/lib/node_modules/firebase-tools/lib/utils.js:253:49)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-06-24T11:01:23.368Z] ----------------------------------------------------------------------
+[debug] [2023-06-24T11:01:23.371Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2023-06-24T11:01:23.371Z] CLI Version:   12.4.0
+[debug] [2023-06-24T11:01:23.372Z] Platform:      darwin
+[debug] [2023-06-24T11:01:23.372Z] Node Version:  v18.14.2
+[debug] [2023-06-24T11:01:23.374Z] Time:          Sat Jun 24 2023 16:31:23 GMT+0530 (India Standard Time)
+[debug] [2023-06-24T11:01:23.374Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-06-24T11:01:23.467Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-06-24T11:01:23.467Z] > authorizing via signed-in user (awanyadav2002@gmail.com)
+[debug] [2023-06-24T11:01:23.467Z] [iam] checking project colproject-efb47 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-06-24T11:01:23.471Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/colproject-efb47:testIamPermissions [none]
+[debug] [2023-06-24T11:01:23.471Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/colproject-efb47:testIamPermissions x-goog-quota-user=projects/colproject-efb47
+[debug] [2023-06-24T11:01:23.472Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/colproject-efb47:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-06-24T11:01:25.501Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/colproject-efb47:testIamPermissions 200
+[debug] [2023-06-24T11:01:25.501Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/colproject-efb47:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-06-24T11:01:25.503Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/colproject-efb47 [none]
+[debug] [2023-06-24T11:01:26.851Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/colproject-efb47 200
+[debug] [2023-06-24T11:01:26.851Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/colproject-efb47 {"projectId":"colproject-efb47","projectNumber":"488163440685","displayName":"ColProject","name":"projects/colproject-efb47","resources":{"hostingSite":"colproject-efb47","storageBucket":"colproject-efb47.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_956310e0-0e70-400d-b4ef-4ddc392d1b89"}
+[info] 
+[info] === Deploying to 'colproject-efb47'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2023-06-24T11:01:26.860Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/colproject-efb47/versions [none]
+[debug] [2023-06-24T11:01:26.861Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/colproject-efb47/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2023-06-24T11:01:30.351Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/colproject-efb47/versions 200
+[debug] [2023-06-24T11:01:30.352Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/colproject-efb47/versions {"name":"projects/488163440685/sites/colproject-efb47/versions/3884dd8538b7b393","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[colproject-efb47]: beginning deploy... 
+[info] i  hosting[colproject-efb47]: found 12 files in build 
+[debug] [2023-06-24T11:02:41.886Z] [hosting] uploading with 200 concurrency
+[debug] [2023-06-24T11:02:41.888Z] [hosting] hash cache [YnVpbGQ] not populated
+[debug] [2023-06-24T11:02:43.658Z] [hosting] hash cache [YnVpbGQ] stored for 12 files
+[debug] [2023-06-24T11:02:43.658Z] [hosting][hash queue][FINAL] {"max":1760,"min":21,"avg":184.33333333333334,"active":0,"complete":12,"success":12,"errored":0,"retried":0,"total":12,"elapsed":1768}
+[debug] [2023-06-24T11:02:43.660Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/488163440685/sites/colproject-efb47/versions/3884dd8538b7b393:populateFiles [none]
+[debug] [2023-06-24T11:02:43.660Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/488163440685/sites/colproject-efb47/versions/3884dd8538b7b393:populateFiles {"files":{"/asset-manifest.json":"db0d702f94b76147017650e1b6abccc277c13b0dd156cb011e7f81d6faecc6d9","/favicon.ico":"b72f7455f00e4e58792d2bca892abb068e2213838c0316d6b7a0d6d16acd1955","/logo192.png":"caff018b7f1e8fd481eb1c50d75b0ef236bcd5078b1d15c8bb348453fee30293","/robots.txt":"391d14b3c2f8c9143a27a28c7399585142228d4d1bdbe2c87ac946de411fa9a2","/static/js/main.61d30bd9.js.LICENSE.txt":"ad2cd4236db1aa9fa451806fdbe3b381d0f44a9ca8f9d5e3b101146396fe3bc0","/logo512.png":"191fc21360b4ccfb1cda11a1efb97f489ed22672ca83f4064316802bbfdd750e","/manifest.json":"341d52628782f8ac9290bbfc43298afccb47b7cbfcee146ae30cf0f46bc30900","/index.html":"a063ac1abd2223df754476bcce44dbd2e21ee4cfcd0d28c01be3b596aee56f3e","/static/css/main.1a6ad066.css":"058ff824dc8075244259610963337e6e49204f1ebc5d23205170d3bd73c0931b","/static/css/main.1a6ad066.css.map":"cbe6e3c168e61de9aea7c4cfe07516ed7f9bb8bfa5a2a31aecbbe9e123c0b726","/static/js/main.61d30bd9.js":"6b9bdb452ddae28e1cd07bf9e7f05a5f294c883c4b62cdc248943a18ad1043e2","/static/js/main.61d30bd9.js.map":"34a0547b3172bf89d2c533ef2c0f24c5a12749537cef461b84434582bb624d18"}}
+[debug] [2023-06-24T11:02:45.085Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/488163440685/sites/colproject-efb47/versions/3884dd8538b7b393:populateFiles 200
+[debug] [2023-06-24T11:02:45.085Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/488163440685/sites/colproject-efb47/versions/3884dd8538b7b393:populateFiles {"uploadRequiredHashes":["6b9bdb452ddae28e1cd07bf9e7f05a5f294c883c4b62cdc248943a18ad1043e2","ad2cd4236db1aa9fa451806fdbe3b381d0f44a9ca8f9d5e3b101146396fe3bc0","34a0547b3172bf89d2c533ef2c0f24c5a12749537cef461b84434582bb624d18","058ff824dc8075244259610963337e6e49204f1ebc5d23205170d3bd73c0931b","cbe6e3c168e61de9aea7c4cfe07516ed7f9bb8bfa5a2a31aecbbe9e123c0b726","191fc21360b4ccfb1cda11a1efb97f489ed22672ca83f4064316802bbfdd750e","b72f7455f00e4e58792d2bca892abb068e2213838c0316d6b7a0d6d16acd1955","caff018b7f1e8fd481eb1c50d75b0ef236bcd5078b1d15c8bb348453fee30293","391d14b3c2f8c9143a27a28c7399585142228d4d1bdbe2c87ac946de411fa9a2","db0d702f94b76147017650e1b6abccc277c13b0dd156cb011e7f81d6faecc6d9","341d52628782f8ac9290bbfc43298afccb47b7cbfcee146ae30cf0f46bc30900","a063ac1abd2223df754476bcce44dbd2e21ee4cfcd0d28c01be3b596aee56f3e"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/colproject-efb47/versions/3884dd8538b7b393/files"}
+[debug] [2023-06-24T11:02:45.089Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/colproject-efb47/versions/3884dd8538b7b393/files/6b9bdb452ddae28e1cd07bf9e7f05a5f294c883c4b62cdc248943a18ad1043e2 [none]
+[debug] [2023-06-24T11:02:45.089Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/colproject-efb47/versions/3884dd8538b7b393/files/6b9bdb452ddae28e1cd07bf9e7f05a5f294c883c4b62cdc248943a18ad1043e2 [stream]
+[debug] [2023-06-24T11:02:45.091Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/colproject-efb47/versions/3884dd8538b7b393/files/ad2cd4236db1aa9fa451806fdbe3b381d0f44a9ca8f9d5e3b101146396fe3bc0 [none]
+[debug] [2023-06-24T11:02:45.091Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/colproject-efb47/versions/3884dd8538b7b393/files/ad2cd4236db1aa9fa451806fdbe3b381d0f44a9ca8f9d5e3b101146396fe3bc0 [stream]
+[debug] [2023-06-24T11:02:45.093Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/colproject-efb47/versions/3884dd8538b7b393/files/34a0547b3172bf89d2c533ef2c0f24c5a12749537cef461b84434582bb624d18 [none]
+[debug] [2023-06-24T11:02:45.093Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/colproject-efb47/versions/3884dd8538b7b393/files/34a0547b3172bf89d2c533ef2c0f24c5a12749537cef461b84434582bb624d18 [stream]
+[debug] [2023-06-24T11:02:45.095Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/colproject-efb47/versions/3884dd8538b7b393/files/058ff824dc8075244259610963337e6e49204f1ebc5d23205170d3bd73c0931b [none]
+[debug] [2023-06-24T11:02:45.095Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/colproject-efb47/versions/3884dd8538b7b393/files/058ff824dc8075244259610963337e6e49204f1ebc5d23205170d3bd73c0931b [stream]
+[debug] [2023-06-24T11:02:45.097Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/colproject-efb47/versions/3884dd8538b7b393/files/cbe6e3c168e61de9aea7c4cfe07516ed7f9bb8bfa5a2a31aecbbe9e123c0b726 [none]
+[debug] [2023-06-24T11:02:45.097Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/colproject-efb47/versions/3884dd8538b7b393/files/cbe6e3c168e61de9aea7c4cfe07516ed7f9bb8bfa5a2a31aecbbe9e123c0b726 [stream]
+[debug] [2023-06-24T11:02:45.098Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/colproject-efb47/versions/3884dd8538b7b393/files/191fc21360b4ccfb1cda11a1efb97f489ed22672ca83f4064316802bbfdd750e [none]
+[debug] [2023-06-24T11:02:45.098Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/colproject-efb47/versions/3884dd8538b7b393/files/191fc21360b4ccfb1cda11a1efb97f489ed22672ca83f4064316802bbfdd750e [stream]
+[debug] [2023-06-24T11:02:45.099Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/colproject-efb47/versions/3884dd8538b7b393/files/b72f7455f00e4e58792d2bca892abb068e2213838c0316d6b7a0d6d16acd1955 [none]
+[debug] [2023-06-24T11:02:45.099Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/colproject-efb47/versions/3884dd8538b7b393/files/b72f7455f00e4e58792d2bca892abb068e2213838c0316d6b7a0d6d16acd1955 [stream]
+[debug] [2023-06-24T11:02:45.102Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/colproject-efb47/versions/3884dd8538b7b393/files/caff018b7f1e8fd481eb1c50d75b0ef236bcd5078b1d15c8bb348453fee30293 [none]
+[debug] [2023-06-24T11:02:45.102Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/colproject-efb47/versions/3884dd8538b7b393/files/caff018b7f1e8fd481eb1c50d75b0ef236bcd5078b1d15c8bb348453fee30293 [stream]
+[debug] [2023-06-24T11:02:45.104Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/colproject-efb47/versions/3884dd8538b7b393/files/391d14b3c2f8c9143a27a28c7399585142228d4d1bdbe2c87ac946de411fa9a2 [none]
+[debug] [2023-06-24T11:02:45.104Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/colproject-efb47/versions/3884dd8538b7b393/files/391d14b3c2f8c9143a27a28c7399585142228d4d1bdbe2c87ac946de411fa9a2 [stream]
+[debug] [2023-06-24T11:02:45.105Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/colproject-efb47/versions/3884dd8538b7b393/files/db0d702f94b76147017650e1b6abccc277c13b0dd156cb011e7f81d6faecc6d9 [none]
+[debug] [2023-06-24T11:02:45.106Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/colproject-efb47/versions/3884dd8538b7b393/files/db0d702f94b76147017650e1b6abccc277c13b0dd156cb011e7f81d6faecc6d9 [stream]
+[debug] [2023-06-24T11:02:45.107Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/colproject-efb47/versions/3884dd8538b7b393/files/341d52628782f8ac9290bbfc43298afccb47b7cbfcee146ae30cf0f46bc30900 [none]
+[debug] [2023-06-24T11:02:45.107Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/colproject-efb47/versions/3884dd8538b7b393/files/341d52628782f8ac9290bbfc43298afccb47b7cbfcee146ae30cf0f46bc30900 [stream]
+[debug] [2023-06-24T11:02:45.109Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/colproject-efb47/versions/3884dd8538b7b393/files/a063ac1abd2223df754476bcce44dbd2e21ee4cfcd0d28c01be3b596aee56f3e [none]
+[debug] [2023-06-24T11:02:45.109Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/colproject-efb47/versions/3884dd8538b7b393/files/a063ac1abd2223df754476bcce44dbd2e21ee4cfcd0d28c01be3b596aee56f3e [stream]
+[debug] [2023-06-24T11:02:45.111Z] [hosting][populate queue][FINAL] {"max":1433,"min":1433,"avg":1433,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1455}
+[debug] [2023-06-24T11:02:45.111Z] [hosting] uploads queued: 12
+[debug] [2023-06-24T11:02:47.160Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/colproject-efb47/versions/3884dd8538b7b393/files/ad2cd4236db1aa9fa451806fdbe3b381d0f44a9ca8f9d5e3b101146396fe3bc0 200
+[debug] [2023-06-24T11:02:47.160Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/colproject-efb47/versions/3884dd8538b7b393/files/ad2cd4236db1aa9fa451806fdbe3b381d0f44a9ca8f9d5e3b101146396fe3bc0 [stream]
+[debug] [2023-06-24T11:02:47.162Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/colproject-efb47/versions/3884dd8538b7b393/files/191fc21360b4ccfb1cda11a1efb97f489ed22672ca83f4064316802bbfdd750e 200
+[debug] [2023-06-24T11:02:47.162Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/colproject-efb47/versions/3884dd8538b7b393/files/191fc21360b4ccfb1cda11a1efb97f489ed22672ca83f4064316802bbfdd750e [stream]
+[debug] [2023-06-24T11:02:47.578Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/colproject-efb47/versions/3884dd8538b7b393/files/b72f7455f00e4e58792d2bca892abb068e2213838c0316d6b7a0d6d16acd1955 200
+[debug] [2023-06-24T11:02:47.579Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/colproject-efb47/versions/3884dd8538b7b393/files/b72f7455f00e4e58792d2bca892abb068e2213838c0316d6b7a0d6d16acd1955 [stream]
+[debug] [2023-06-24T11:02:47.590Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/colproject-efb47/versions/3884dd8538b7b393/files/341d52628782f8ac9290bbfc43298afccb47b7cbfcee146ae30cf0f46bc30900 200
+[debug] [2023-06-24T11:02:47.590Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/colproject-efb47/versions/3884dd8538b7b393/files/341d52628782f8ac9290bbfc43298afccb47b7cbfcee146ae30cf0f46bc30900 [stream]
+[debug] [2023-06-24T11:02:47.627Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/colproject-efb47/versions/3884dd8538b7b393/files/391d14b3c2f8c9143a27a28c7399585142228d4d1bdbe2c87ac946de411fa9a2 200
+[debug] [2023-06-24T11:02:47.628Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/colproject-efb47/versions/3884dd8538b7b393/files/391d14b3c2f8c9143a27a28c7399585142228d4d1bdbe2c87ac946de411fa9a2 [stream]
+[debug] [2023-06-24T11:02:47.890Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/colproject-efb47/versions/3884dd8538b7b393/files/6b9bdb452ddae28e1cd07bf9e7f05a5f294c883c4b62cdc248943a18ad1043e2 200
+[debug] [2023-06-24T11:02:47.890Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/colproject-efb47/versions/3884dd8538b7b393/files/6b9bdb452ddae28e1cd07bf9e7f05a5f294c883c4b62cdc248943a18ad1043e2 [stream]
+[debug] [2023-06-24T11:02:47.892Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/colproject-efb47/versions/3884dd8538b7b393/files/caff018b7f1e8fd481eb1c50d75b0ef236bcd5078b1d15c8bb348453fee30293 200
+[debug] [2023-06-24T11:02:47.892Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/colproject-efb47/versions/3884dd8538b7b393/files/caff018b7f1e8fd481eb1c50d75b0ef236bcd5078b1d15c8bb348453fee30293 [stream]
+[debug] [2023-06-24T11:02:47.894Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/colproject-efb47/versions/3884dd8538b7b393/files/058ff824dc8075244259610963337e6e49204f1ebc5d23205170d3bd73c0931b 200
+[debug] [2023-06-24T11:02:47.895Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/colproject-efb47/versions/3884dd8538b7b393/files/058ff824dc8075244259610963337e6e49204f1ebc5d23205170d3bd73c0931b [stream]
+[debug] [2023-06-24T11:02:48.292Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/colproject-efb47/versions/3884dd8538b7b393/files/a063ac1abd2223df754476bcce44dbd2e21ee4cfcd0d28c01be3b596aee56f3e 200
+[debug] [2023-06-24T11:02:48.292Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/colproject-efb47/versions/3884dd8538b7b393/files/a063ac1abd2223df754476bcce44dbd2e21ee4cfcd0d28c01be3b596aee56f3e [stream]
+[debug] [2023-06-24T11:02:48.352Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/colproject-efb47/versions/3884dd8538b7b393/files/db0d702f94b76147017650e1b6abccc277c13b0dd156cb011e7f81d6faecc6d9 200
+[debug] [2023-06-24T11:02:48.352Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/colproject-efb47/versions/3884dd8538b7b393/files/db0d702f94b76147017650e1b6abccc277c13b0dd156cb011e7f81d6faecc6d9 [stream]
+[debug] [2023-06-24T11:02:48.624Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/colproject-efb47/versions/3884dd8538b7b393/files/cbe6e3c168e61de9aea7c4cfe07516ed7f9bb8bfa5a2a31aecbbe9e123c0b726 200
+[debug] [2023-06-24T11:02:48.624Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/colproject-efb47/versions/3884dd8538b7b393/files/cbe6e3c168e61de9aea7c4cfe07516ed7f9bb8bfa5a2a31aecbbe9e123c0b726 [stream]
+[debug] [2023-06-24T11:02:53.475Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/colproject-efb47/versions/3884dd8538b7b393/files/34a0547b3172bf89d2c533ef2c0f24c5a12749537cef461b84434582bb624d18 200
+[debug] [2023-06-24T11:02:53.475Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/colproject-efb47/versions/3884dd8538b7b393/files/34a0547b3172bf89d2c533ef2c0f24c5a12749537cef461b84434582bb624d18 [stream]
+[debug] [2023-06-24T11:02:53.475Z] [hosting][upload queue][FINAL] {"max":8388,"min":2074,"avg":3207.3333333333335,"active":0,"complete":12,"success":12,"errored":0,"retried":0,"total":12,"elapsed":8389}
+[info] ✔  hosting[colproject-efb47]: file upload complete 
+[debug] [2023-06-24T11:02:53.477Z] [hosting] deploy completed after 11602ms
+[debug] [2023-06-24T11:02:53.482Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "colproject-efb47"
+    },
+    "version": "projects/488163440685/sites/colproject-efb47/versions/3884dd8538b7b393"
+  }
+]
+[info] i  hosting[colproject-efb47]: finalizing version... 
+[debug] [2023-06-24T11:02:53.485Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/colproject-efb47/versions/3884dd8538b7b393 updateMask=status%2Cconfig
+[debug] [2023-06-24T11:02:53.485Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/colproject-efb47/versions/3884dd8538b7b393 {"status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]}}
+[debug] [2023-06-24T11:02:54.911Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/colproject-efb47/versions/3884dd8538b7b393 200
+[debug] [2023-06-24T11:02:54.911Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/colproject-efb47/versions/3884dd8538b7b393 {"name":"projects/488163440685/sites/colproject-efb47/versions/3884dd8538b7b393","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2023-06-24T11:01:30.877098Z","createUser":{"email":"awanyadav2002@gmail.com"},"finalizeTime":"2023-06-24T11:02:56.918370Z","finalizeUser":{"email":"awanyadav2002@gmail.com"}}
+[debug] [2023-06-24T11:02:54.911Z] [hosting] finalized version for colproject-efb47:[object Object]
+[info] ✔  hosting[colproject-efb47]: version finalized 
+[info] i  hosting[colproject-efb47]: releasing new version... 
+[debug] [2023-06-24T11:02:54.913Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/colproject-efb47/channels/live/releases versionName=projects%2F488163440685%2Fsites%2Fcolproject-efb47%2Fversions%2F3884dd8538b7b393
+[debug] [2023-06-24T11:02:54.913Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/colproject-efb47/channels/live/releases {}
+[debug] [2023-06-24T11:02:56.282Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/colproject-efb47/channels/live/releases 200
+[debug] [2023-06-24T11:02:56.282Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/colproject-efb47/channels/live/releases {"name":"projects/488163440685/sites/colproject-efb47/channels/live/releases/1687604577715000","version":{"name":"projects/488163440685/sites/colproject-efb47/versions/3884dd8538b7b393","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2023-06-24T11:01:30.877098Z","createUser":{"email":"awanyadav2002@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AAcHTtc4BmyuG6S4qmiUeglWveP_ubpnBOvY3ifXTQskhQ"},"finalizeTime":"2023-06-24T11:02:56.918370Z","finalizeUser":{"email":"awanyadav2002@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AAcHTtc4BmyuG6S4qmiUeglWveP_ubpnBOvY3ifXTQskhQ"}},"type":"DEPLOY","releaseTime":"2023-06-24T11:02:57.715Z","releaseUser":{"email":"awanyadav2002@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AAcHTtc4BmyuG6S4qmiUeglWveP_ubpnBOvY3ifXTQskhQ"}}
+[debug] [2023-06-24T11:02:56.282Z] [hosting] release: {"name":"projects/488163440685/sites/colproject-efb47/channels/live/releases/1687604577715000","version":{"name":"projects/488163440685/sites/colproject-efb47/versions/3884dd8538b7b393","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2023-06-24T11:01:30.877098Z","createUser":{"email":"awanyadav2002@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AAcHTtc4BmyuG6S4qmiUeglWveP_ubpnBOvY3ifXTQskhQ"},"finalizeTime":"2023-06-24T11:02:56.918370Z","finalizeUser":{"email":"awanyadav2002@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AAcHTtc4BmyuG6S4qmiUeglWveP_ubpnBOvY3ifXTQskhQ"}},"type":"DEPLOY","releaseTime":"2023-06-24T11:02:57.715Z","releaseUser":{"email":"awanyadav2002@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AAcHTtc4BmyuG6S4qmiUeglWveP_ubpnBOvY3ifXTQskhQ"}}
+[info] ✔  hosting[colproject-efb47]: release complete 
+[info] 
+[info] ✔  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/colproject-efb47/overview
+[info] Hosting URL: https://colproject-efb47.web.app
+[debug] [2023-06-24T11:04:21.318Z] Error: Timed out.
+    at Timeout._onTimeout (/usr/local/lib/node_modules/firebase-tools/lib/utils.js:253:49)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+[error] 
+[error] Error: An unexpected error has occurred.
